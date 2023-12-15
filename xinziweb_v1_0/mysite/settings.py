@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'mysite.employee',
-    'mysite.myuserapp'
+    'mysite.myuserapp',
+    'mysite.asset'
 ]
 
 MIDDLEWARE = [
