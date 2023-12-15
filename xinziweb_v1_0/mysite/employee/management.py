@@ -7,7 +7,7 @@ from mysite.employee.models import department
 # post_migrate    # 执行migrate命令后，自动触发
 # 定义receiver函数
 def init_db(sender, **kwargs):
-    if sender.name == 'employee':
+    if sender.name == 'mysite.employee':
         if department.objects.all().count() == 0:
             department(DeptName="总部门", DeptNumber='1', parent=0).save()
 
